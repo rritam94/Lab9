@@ -6,6 +6,7 @@ def encode(password):
 
     return new_password
 
+<<<<<<< HEAD
 def main():
     while(True):
         encoded_value = 0
@@ -33,3 +34,11 @@ def main():
 
 if __name__ == '__main__':
     main()
+=======
+def decode(password):
+    decoded_password = ''
+    for char in password:
+        decoded_password += str(((int(char)+10)-3) % 10)
+
+    return decoded_password
+>>>>>>> a716275726afa39eb8d1f39ee44a2d0bb0822bc4
